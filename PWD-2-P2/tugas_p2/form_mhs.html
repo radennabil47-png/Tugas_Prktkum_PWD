@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form mahasiswa</title>
+  </head>
+  <body>
+    <h1>Form Mahasiswa</h1>
+    <fieldset>
+      <legend>Data Mahasiswa</legend>
+      <div>
+        <label for="nama">Nama :</label>
+        <input type="text" name="npm" id="nama" />
+      </div>
+      <div>
+        <label for="nama">NPM :</label>
+        <input type="text" name="npm" id="npm" />
+      </div>
+      <div>
+        <label for="nama">Kelas :</label>
+        <select name="kelas">
+          <option value="disabled selected"></option>
+          <option value="IF A">IF A</option>
+          <option value="IF B">IF B</option>
+          <option value="IF C">IF C</option>
+        </select>
+      </div>
+      <div>
+        <label>Jenis Kelamin :</label>
+        <input type="radio" name="jk" value="pria" />pria
+        <input type="radio" name="jk" value="wanita" />wanita
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Tempat Tinggal Mahasiswa</legend>
+      <div>
+        <label for="">Alamat :</label>
+        <textarea name="" id=""></textarea>
+      </div>
+      <div>
+        <label for="kecamatan">Kecamatan :</label>
+        <input type="text" name="kecamatan" id="kecamatan" />
+      </div>
+      <div>
+        <label for="kabupaten">Kabupaten/kotamadya :</label>
+        <input type="text" name="kabupaten" id="kabupaten" />
+      </div>
+      <div>
+        <label for="provinsi">provinsi :</label>
+        <input type="text" name="provinsi" id="provinsi" />
+      </div>
+      <div>
+        <label for="kode pos">Kode pos :</label>
+        <input type="text" name="kode pos" id="kode pos" />
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Lain-lainnya</legend>
+      <div style="display: flex">
+        <label>Bahasa Pemrograman :</label>
+        <div>
+          <input type="checkbox" name="Hobi[]" value="C / C++" />C/C++
+          <input type="checkbox" name="Hobi[]" value="Go Lang" />Go Lang
+          <input type="checkbox" name="Hobi[]" value="Pyhton" />Phyton
+          <input type="checkbox" name="Hobi[]" value="Lainnya" />Lainnya <br />
+          <input type="checkbox" name="Hobi[]" value="PHP" />PHP
+          <input type="checkbox" name="Hobi[]" value="javaScripct" />javaScripct
+          <input type="checkbox" name="Hobi[]" value="Ruby" />Ruby
+        </div>
+        
+      </div>
+      <div style="display: flex">
+        <label>Kegiatan :</label>
+        <div>
+          <input
+            type="checkbox"
+            name="Kegiatan[]"
+            value="Organisasi Eksternal"
+          />Organisasi di Luar Kampus
+          <input
+            type="checkbox"
+            name="Kegiatan[]"
+            value="Bidang Olahraga"
+          />Bidang Olahraga
+          <input type="checkbox" name="Kegiatan[]" value="Lainnya" />Lainnya
+
+          <br />
+
+          <input
+            type="checkbox"
+            name="Kegiatan[]"
+            value="Organisasi Himpunan"
+          />organisasi diluar kampus
+          <input type="checkbox" name="Kegiatan[]" value=" Bidang Seni" />Bidang
+          Seni
+        </div>
+      </div>
+      <div>
+        <button>submit</button>
+        <button>Reset</button>
+      </div>
+
+    </fieldset>
+
+  </body>
+</html>
