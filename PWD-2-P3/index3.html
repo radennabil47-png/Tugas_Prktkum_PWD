@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>halaman tiga</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+        list-style: none;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(70, 62, 62);
+        padding: 20px;
+      }
+
+      .logo {
+        font-size: 30px;
+        font-weight: 600;
+        color: rgb(249, 245, 245);
+        text-transform: uppercase;
+        margin-left: 20px;
+      }
+
+      li {
+        display: inline-block;
+        margin-right: 50px;
+      }
+
+      li a {
+        color: rgb(249, 244, 244);
+        font-size: 15px;
+        font-weight: 400;
+        margin-right: 20px;
+      }
+
+      li a:hover {
+        border-bottom: 1px solid rgb(235, 228, 228);
+      }
+
+      #contact {
+        padding: 50px;
+        text-align: center;
+        background-color: rgb(190, 181, 181);
+      }
+
+      #contact h2 {
+        color: #161111;
+        margin-bottom: 20px;
+      }
+
+      #contact form {
+        background-color: rgb(123, 105, 105);
+        display: inline-block;
+        padding: 20px 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 8px rgba(229, 226, 226, 0.1);
+        text-align: left;
+      }
+
+      #contact input,
+      #contact textarea {
+        width: 250px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      #contact button {
+        background-color: #007bff;
+        color: white;
+        padding: 8px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      #contact button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Nabil Salman</a>
+      <ul>
+        <li><a href="index1.html">Home</a></li>
+        <li><a href="index2.html">About</a></li>
+        <li><a href="index3.html">Kontak</a></li>
+      </ul>
+    </header>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <label>Nama:</label><br />
+        <input type="text" placeholder="Masukkan nama" /><br /><br />
+
+        <label>Email:</label><br />
+        <input type="email" placeholder="Masukkan email" /><br /><br />
+
+        <label>Pesan:</label><br />
+        <textarea rows="4" placeholder="Tulis pesan..."></textarea><br /><br />
+
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+  </body>
+</html>
