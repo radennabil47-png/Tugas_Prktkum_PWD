@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+  /* Memastikan tinggi halaman > 2000px (Ketentuan 1) */
+  min-height: 2500px; 
+  background: linear-gradient(to bottom, #6478d0, #538bd3);
+  color: white;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Styling Tombol Melayang (Back to Top) */
+#btnScrollToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px; /* Posisi kanan bawah */
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #493aba;
+  color: rgb(244, 239, 239);
+  cursor: pointer;
+  padding: 15px 20px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(216, 184, 184, 0.2);
+  
+  /* Hidden secara default */
+  display: none; 
+  
+  /* Opacity awal agar tidak mengganggu konten (Ketentuan 3) */
+  opacity: 0.6; 
+  transition: opacity 0.3s ease, transform 0.2s ease, background-color 0.3s ease;
+}
+
+/* Opacity 100% saat di-hover (Ketentuan 3) */
+#btnScrollToTop:hover {
+  opacity: 1;
+  background-color: #2d09ae;
+  transform: translateY(-3px);
+}

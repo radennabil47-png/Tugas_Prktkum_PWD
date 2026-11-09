@@ -1,0 +1,48 @@
+<!<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan Scroll to Top</title>
+  <!-- Menghubungkan file CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="content">
+    <!-- Header Utama Halaman -->
+    <h1>Header Halaman Utama</h1>
+    <p>Selamat datang di halaman demonstrasi fitur <i>Scroll to Top</i>. Halaman ini dirancang untuk menguji fungsionalitas tombol navigasi melayang yang akan secara otomatis muncul ketika pengguna melakukan <i>scroll</i> ke bawah melebihi jarak tertentu.</p>
+    <p>Silakan lanjut (<i>scroll</i>) layar Anda ke bawah untuk melihat bagaimana tombol navigasi di pojok kanan bawah bekerja secara dinamis.</p>
+
+    <!-- Konten Bagian 1 (> 500px) -->
+    <div style="margin-top: 600px;">
+      <h2>Bagian Konten 1 (Kedalaman > 500px)</h2>
+      <p>Anda telah melakukan <i>scroll</i> melebihi 500 piksel. Pada titik ini, tombol <b>Back to Top</b> seharusnya sudah mulai muncul di sudut kanan bawah layar Anda.</p>
+      <p>Tombol tersebut dirancang dengan nilai <i>opacity</i> yang lebih rendah agar tidak mengganggu keterbacaan teks atau konten utama pada halaman ini.</p>
+    </div>
+
+    <!-- Konten Bagian 2 -->
+    <div style="margin-top: 800px;">
+      <h2>Bagian Konten 2 (Area Tengah Halaman)</h2>
+      <p>Ini adalah bagian tengah dari struktur halaman. Ketika kursor Anda diarahkan (<i>hover</i>) di atas tombol melayang tersebut, transparansinya akan berubah menjadi 100% penuh untuk memberikan respons visual kepada pengguna.</p>
+      <p>Fitur ini sangat berguna pada halaman web yang memiliki artikel panjang, dokumentasi teknis, atau daftar produk e-commerce untuk memudahkan pengguna kembali ke bagian atas tanpa harus menggulir manual.</p>
+    </div>
+
+    <!-- Konten Bagian 3 (Kedalaman > 2000px) -->
+    <div style="margin-top: 800px;">
+      <h2>Bagian Konten 3 (Kedalaman > 2000px)</h2>
+      <p>Anda sekarang berada di bagian dasar halaman dengan total kedalaman <i>scroll</i> melebihi 2000 piksel. Semua syarat kedalaman halaman telah terpenuhi.</p>
+      <p>Klik tombol <b>↑ Top</b> di pojok kanan bawah untuk menguji pergerakan kembali ke header paling atas secara halus (<i>smooth scroll</i>).</p>
+    </div>
+  </div>
+
+  <!-- Tombol Arah ke Atas -->
+  <button id="btnScrollToTop" title="Kembali ke atas">↑ Top</button>
+
+  <!-- Menghubungkan file JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
+</body>
+</html>
